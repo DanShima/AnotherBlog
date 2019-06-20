@@ -7,9 +7,13 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about">About</g-link>
+        <g-link class="nav__link" to="/blog">Blog</g-link>
       </nav>
     </header>
-    <slot/>
+    <slot/> <!-- Page content will be inserted here -->
+    <div v-if="sidebar">
+    //do nothing
+    </div>
   </div>
 </template>
 
@@ -48,3 +52,10 @@ body {
   margin-left: 20px;
 }
 </style>
+
+<script>
+export default {
+  props: ['sidebar']
+}
+
+</script>

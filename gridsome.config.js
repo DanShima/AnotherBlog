@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Just another blog',
+  siteName: 'Just Another Blog',
   siteDescription: "A safe space to stalk me",
-  icon: "src/favicon.png",
+  icon: "src/poring1.jpg",
   transformers: {
     remark: {}
   },

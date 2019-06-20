@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :sidebar="true">
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/hackathonshot.png" width="300" />
@@ -21,7 +21,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home page'
   }
 }
 </script>
