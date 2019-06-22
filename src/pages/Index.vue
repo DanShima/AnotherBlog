@@ -6,15 +6,10 @@
 
     <h1>I'm alive</h1>
 
-    <p>
-
-    </p>
-
     <p class="home-links">
-      <a href="https://www.linkedin.com/in/danningch/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/danshima" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/danningch/" target="_blank" rel="noopener"><font-awesome :icon="['fab', 'linkedin']"/></a>
+      <a href="https://github.com/danshima" target="_blank" rel="noopener"><font-awesome :icon="['fab', 'github']"/></a>
     </p>
-
   </Layout>
 </template>
 

@@ -7,6 +7,9 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "gridsome": "^0.6.0"
   },
   "devDependencies": {

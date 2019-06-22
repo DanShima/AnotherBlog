@@ -11,11 +11,16 @@
         <li>Build simple games with Unity and LibGDX</li>
         <li>Experience with: Java, Kotlin, C#, C++, Python, JS/HTML/CSS</li>
       </ul>
+      <Card/>
   </Layout>
 </template>
 
 <script>
+import Card from '~/components/Card.vue'
 export default {
+  components: {
+    Card
+  },
   metaInfo: {
     title: 'About me'
   }
