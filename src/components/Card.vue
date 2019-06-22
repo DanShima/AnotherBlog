@@ -2,7 +2,6 @@
   <div class="card">
     {{ message }}
     <button @click="onClick">Change</button>
-     <font-awesome-icon icon="coffee"/>
   </div>
 </template>
 
