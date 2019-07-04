@@ -4,7 +4,7 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/hackathonshot.png" width="300" />
 
-    <h1>I'm alive</h1>
+    <h2>I'm alive</h2>
 
     <p class="home-links">
       <a href="https://www.linkedin.com/in/danningch/" target="_blank" rel="noopener"><font-awesome :icon="['fab', 'linkedin']"/></a>
@@ -24,5 +24,6 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+  color:#7268A6;
 }
 </style>

@@ -45,10 +45,20 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  height: 80px;
+  height: 100px;
+  font-size: 1.5em;
+  font-family: "Stylish";
+  font-size: 28px;
+  padding: 0.2em;
+}
+
+.header a {
+  text-decoration: none;
+  color:#7268A6;
 }
 
 .nav__link {
+  font-size: 20px;
   margin-left: 20px;
 }
 </style>
