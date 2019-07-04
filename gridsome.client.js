@@ -7,5 +7,5 @@ config.autoAddCss = false;
 library.add(faGithub, faTwitter, faLinkedin)
 
 export default function (Vue) {
-  Vue.component('font-awesome', FontAwesomeIcon)
+  Vue.component('font-awesome', FontAwesomeIcon);
 }

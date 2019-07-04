@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Just Another Blog',
+  siteName: 'Danning Chen',
   siteDescription: "A safe space to stalk me",
   icon: "src/poring1.jpg",
   transformers: {
@@ -16,7 +16,8 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
-        typeName: "Post" // the GraphQL entity that will be created
+        typeName: "Post", // the GraphQL entity that will be created
+        route: "/blog/:slug"
       }
     }
   ]
