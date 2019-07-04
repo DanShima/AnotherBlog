@@ -1,21 +1,25 @@
 ---
-title: Takeaways from "The Five Elements of Effective Thinking"
+title: The Five Elements of Effective Thinking
+description: Takeaways from "The Five Elements of Effective Thinking"
+date: 2019-07-05
 ---
 
-## Understand deeply
+# Takeaways from "The Five Elements of Effective Thinking"
+
+## 1. Understand deeply
 clear the clutter and expose what's really important. Identify and fill the gaps without bias, prejudice and preconceived notions.
 Rock solid understanding is the foundation for success
 
-## Make mistakes
+## 2. Make mistakes
 Intentionally get it wrong to get it even more right. Failure to succeed ignites your imagination.
 
-## Raise questions
+## 3. Raise questions
 The right questions will bring ideas out and help you see connections that otherwise would have been invisible.
 
-## Follow the flow of ideas
+## 4. Follow the flow of ideas
 Look back to see where ideas came from and then look ahead to see where those ideas may lead.
 
-## Change
+## 5. Change
 change the way you think and learn by mastering the first four elements. Change is the universal constant that allows you to get the most out of living and learning.
 
 ### What's more...

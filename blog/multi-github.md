@@ -1,5 +1,7 @@
 ---
-title: Having multiple github accounts on your computer
+title: Github accounts
+description: Having multiple github accounts on your computer
+date: 2019-06-05
 ---
 
 ## Having multiple github accounts on your computer
