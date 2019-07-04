@@ -21,7 +21,7 @@
   padding: 7px;
   color: #333;
   text-decoration: none;
-  background: rgb(188, 173, 206);
+  background: #86A3C3;
 }
 </style>
 
