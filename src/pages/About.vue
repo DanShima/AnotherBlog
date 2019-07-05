@@ -51,9 +51,9 @@
   .penguin {
 
     /* use css variables to change many style properties at once */
-    --penguin-skin: grey;
+    --penguin-skin: rgb(155, 151, 151);
     --penguin-belly: white;
-    --penguin-beak: orange;
+    --penguin-beak: rgb(247, 172, 35);
 
     position: relative;
     margin: auto;
@@ -91,6 +91,37 @@
     transform: rotate(45deg);
     z-index: -1;
   }
+
+  .penguin:hover .right-hand{
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 50%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(130deg);
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+      10% {
+        transform: rotate(110deg);
+      }
+      20% {
+        transform: rotate(130deg);
+      }
+      30% {
+        transform: rotate(110deg);
+      }
+      40% {
+        transform: rotate(130deg);
+      }
+    }
 
   .left-hand {
     top: 0%;
