@@ -48,6 +48,9 @@
 </template>
 
 <style>
+  h1, h2 {
+    font-family: "Stylish";
+  }
   .penguin {
 
     /* use css variables to change many style properties at once */
