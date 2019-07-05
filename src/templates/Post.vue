@@ -28,7 +28,7 @@ query Post ($path: String!) {
 <style>
 .post-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 10px;
   padding: 2em 0;
   font-family: 'Stylish';
