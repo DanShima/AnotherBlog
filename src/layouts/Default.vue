@@ -1,9 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
+      <div class="siteTitle"><strong>
         <g-link to="/">{{ $static.metaData.siteName }}</g-link>
       </strong>
+      </div>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about">About</g-link>
@@ -49,12 +50,15 @@ body {
   font-size: 1.5em;
   font-family: "Stylish";
   font-size: 28px;
-  padding: 0.2em;
 }
 
 .header a {
   text-decoration: none;
   color:#7268A6;
+}
+
+.siteTitle {
+  text-transform: uppercase;
 }
 
 .nav__link {

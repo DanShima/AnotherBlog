@@ -5,7 +5,7 @@
     <h1 class="title" v-html="post.title" />
     <p class="description" v-html="post.description" />
     <b> {{post.timeToRead}} min read </b> &nbsp;
-    <g-link :to="post.path" class="read">Read More...</g-link>
+    <g-link :to="post.path" class="read">Read more...</g-link>
   </div>
 </template>
 
@@ -22,6 +22,8 @@
   color: #333;
   text-decoration: none;
   background: #86A3C3;
+  border-radius: 6%;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
 }
 </style>
 
