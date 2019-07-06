@@ -249,6 +249,10 @@
     border-radius: 50%;
   }
 
+  body {
+    background:#eaebf5;
+  }
+
   .penguin * {
     position: absolute;
   }
