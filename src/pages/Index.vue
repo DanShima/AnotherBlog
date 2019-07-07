@@ -2,7 +2,9 @@
   <Layout :sidebar="true">
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/hackathonshot.png" width="300" />
+    <div class="homeImage">
+    <g-image alt="Example image" src="~/hackathonshot.png" width="350" />
+    </div>
 
     <h2>I'm alive</h2>
 
@@ -25,5 +27,9 @@ export default {
 .home-links a {
   margin-right: 1rem;
   color:#7268A6;
+}
+
+.homeImage:hover {
+  transform: scale(1.1);
 }
 </style>
