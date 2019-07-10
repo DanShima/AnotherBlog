@@ -36,6 +36,8 @@
         <li>Build frontend web applications with Angular.js and Vue.js</li>
         <li>Build simple games with Unity and LibGDX</li>
         <li>Experience with: Java, Kotlin, C#, C++, Python, JS/HTML/CSS</li>
+        <li>CI/CD, infrastructure and operations, build and release management, 
+          basic understanding of networking and security</li>
       </ul>
     <h2>Games</h2>
     <ul>
