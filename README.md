@@ -2,6 +2,8 @@
 
 This is a simple website built with gridsome and vue.js
 
+![How Gridsome works](https://gridsome.org/assets/static/how-it-works.cbab2cf.e33aa2d.png)
+
 ### 1. Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`

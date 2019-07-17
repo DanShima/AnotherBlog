@@ -9,6 +9,14 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Stylish&display=swap'
 }),
+router.beforeEach((to, _from, next) => {
+  head.meta.push({
+    key: 'og:url',
+    name: 'og:url',
+    content: process.env.GRIDSOME_BASE_PATH + to.path,
+  })
+  next()
+}),
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
 }
