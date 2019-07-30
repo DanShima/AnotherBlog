@@ -81,5 +81,36 @@ val observable = Observable.defer {
 - **delay**: delay emission, like .delay(5, TimeUnit.SECONDS)
 - **map**: Transforms the emissions of the observable through a function. Observable.range(1, 10).map{ n -> n / 2 }
 - **flatmap**: the output of one observable becomes the input of the other observable and they become one single observable. It introduces a separate observable for each item it emits. The order is disregarded and if one item can be emitted ahead of the other, it will be (use concatMap if order is wanted).
+- **combineLatest**: Whenever an update is made to either observable, the latest items from all observables are emitted via a specified function.
+```
+val o1 = Observable.interval(1, TimeUnit.SECONDS).map { it -> "A$it" }
+val o2 = Observable.interval(2, TimeUnit.SECONDS).map { it -> "B$it" }
+val observableArray = arrayOf(o1, o2)
 
+val combinedObservable = Observable.combineLatest(observableArray) { args ->
+    args.map { it -> it.toString() }
+}.subscribe { array ->
+    for (item in array) { Log.d(LOG_TAG, item) }
+}
+```
+- **switchOnNext**: Useful if you have an observable of observables! Emits items from the first observable until the second observable can start emitting, then unsubscribes from the first and starts emitting from the second.
+- **zip**: Combines observables via a function and emits single items for each combination based on the results of this function. Zip waits for both observables to have emitted before releasing the combined emission.
+```
+val combinedObservable = Observable.zip(o1, o2, BiFunction { t1: String, t2: String ->
+    return@BiFunction "$t1 $t2"
+}).subscribe {
+    Log.d(LOG_TAG, it)
+}
 
+Output
+A0 B0
+A1 B1
+A2 B2
+A3 B3
+```
+- **reduce**: This reduces all the emissions into a single value by sequentially applying a function to them.
+```
+Observable.just(1, 2, 3, 4, 5)
+        .reduce { t1: Int, t2: Int -> t1 * t2 } // Performs 1 * 2 * 3 * 4 * 5
+        .subscribe() // Results in 120
+```
