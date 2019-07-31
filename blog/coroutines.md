@@ -39,3 +39,6 @@ If your app…
 
 ### Resources
 https://proandroiddev.com/kotlin-coroutines-channels-csp-android-db441400965f
+
+https://github.com/tfcporciuncula/rxjava-to-coroutines
+
