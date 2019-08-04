@@ -43,7 +43,7 @@
       </ul>
     <h2>Games</h2>
     <ul>
-      <li><a href="https://danshima.com/" target="_blank" rel="noopener">HookaGnome</a></li>
+      <li><a href="https://hookagnome.web.app/" target="_blank" rel="noopener">HookaGnome</a></li>
       <li><a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">Gear Up</a></li>
     </ul>
       <Card/>
