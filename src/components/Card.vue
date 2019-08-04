@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-    {{ message }}
-    <button @click="onClick">Change</button>
+    <!-- {{ message }}
+    <button @click="onClick">Change</button> -->
   </div>
 </template>
 

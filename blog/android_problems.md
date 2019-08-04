@@ -6,9 +6,11 @@ date: 2019-07-10
 
 ### Various Android problems I encountered in my first year
 
+No matter how many tutorials you watch or how many lines of code you read, nothing gets you to learn faster than just build an app and encounter all kinds of problems while doing so. After one year, I have had my fair share of pulling hair and stalking StackOverflow for solutions. Here are some problems I remember and hopefully I'll keep this post updated with new problems!
+
 * **Set focus on the edit input field with editText.requestFocus() if android:focusable = true in xml doesn't work.**
 
-* **Recyclerview adapter position wasn't updated accurately.** 
+* **Recyclerview adapter position wasn't updated accurately.**
 >```
 adapter.setHasStableIds(true)
 > ```
@@ -21,14 +23,14 @@ override fun getItemId(position: Int): Long {    return kvItems[position].hashCo
     Then in onBindViewHolder you can set UI changes dynamically, like giving round corners to the last item within a group.
 
 > ```
-if (position + 1 >= itemCount) {    
-    if (position == kvItems.lastIndex) {       
-        layout.background = roundFooter    
-    } else {    
-        if (getItemViewType(position + 1) == KvListItem.typeDate) {        
-            layout.background = roundFooter   
-            } else {        
-                layout.setBackgroundColor(ContextCompat.getColor(context, R.color.kivraGrayLightest))    
+if (position + 1 >= itemCount) {
+    if (position == kvItems.lastIndex) {
+        layout.background = roundFooter
+    } else {
+        if (getItemViewType(position + 1) == KvListItem.typeDate) {
+            layout.background = roundFooter
+            } else {
+                layout.setBackgroundColor(ContextCompat.getColor(context, R.color.kivraGrayLightest))
             }
     }
 }
@@ -36,12 +38,12 @@ if (position + 1 >= itemCount) {
 
 * **Api request that succeeded but the view was not refreshed. Turns out the request needed a subscribe() block.**
 > ```
-fun clear(): Disposable {       
-    return Completable.fromCallable { 
-        contentItemDao.deleteTrashedContentItems() 
+fun clear(): Disposable {
+    return Completable.fromCallable {
+        contentItemDao.deleteTrashedContentItems()
         }
-        .toNetworkCompletable()            
-        .subscribe({ Timber.d("success") }, { Timber.d("fail") })    
+        .toNetworkCompletable()
+        .subscribe({ Timber.d("success") }, { Timber.d("fail") })
         }}
 > ```
 * **Mocking network requests for testing: MockWebServer should be used for testing** [article] (https://android.jlelse.eu/unit-test-api-calls-with-mockwebserver-d4fab11de847)
@@ -52,9 +54,9 @@ fun clear(): Disposable {
 > ```
 val file = activity.resources.openRawResource(R.raw.json2).bufferedReader().use { it.readText() }
 // use a local pdf file
-val file = targetContext.resources.openRawResource(R.raw.testpdf).buffered()    
-val result = Buffer()    
-result.writeAll(Okio.source(file)) 
+val file = targetContext.resources.openRawResource(R.raw.testpdf).buffered()
+val result = Buffer()
+result.writeAll(Okio.source(file))
 > ```
 * **Using idlingResource**
 > ```
@@ -67,9 +69,9 @@ In Test, call Espresso.registerIdlingResources(activityRule.activity.idlingreso
 
 * **Save info in sharedPreferences**
 >```
-private fun saveVersionCode() {    
-    getSharedPreferences(SHARED_PREFERENCE_ID, Context.MODE_PRIVATE).edit(true) {        
-        putInt(VERSION_CODE, BuildConfig.VERSION_CODE)    
+private fun saveVersionCode() {
+    getSharedPreferences(SHARED_PREFERENCE_ID, Context.MODE_PRIVATE).edit(true) {
+        putInt(VERSION_CODE, BuildConfig.VERSION_CODE)
         }
 }
 >```

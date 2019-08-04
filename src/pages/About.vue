@@ -27,16 +27,18 @@
 </div>
 
 
-    <p>Android developer with a background in education and literature.
+    <p>A self-taught programmer with a background in education and literature.
       Born in China, grew to full-size in The Netherlands, and now based in Stockholm, Sweden.
-      Obsessed with food, art, programming, otaku culture, and game(development).</p>
+      Obsessed with food, art, programming, nerd culture, and game(development).
+      I specialize in developing Android apps while shaking my restless leg.
+    </p>
     <h2>Tech skills and languages</h2>
       <ul>
         <li>Build android applications with Java and Kotlin</li>
         <li>Build frontend web applications with Angular.js and Vue.js</li>
-        <li>Build simple games with Unity and LibGDX</li>
+        <li>Build games with Unity, Blender and LibGDX</li>
         <li>Experience with: Java, Kotlin, C#, C++, Python, JS/HTML/CSS</li>
-        <li>CI/CD, infrastructure and operations, build and release management, 
+        <li>CI/CD, infrastructure and operations, build and release management,
           basic understanding of networking and security</li>
       </ul>
     <h2>Games</h2>

@@ -114,3 +114,5 @@ Observable.just(1, 2, 3, 4, 5)
         .reduce { t1: Int, t2: Int -> t1 * t2 } // Performs 1 * 2 * 3 * 4 * 5
         .subscribe() // Results in 120
 ```
+
+Rxjava has its place in a code base, but please, do NOT go overboard and do everything with Rxjava, including UI/view changes!

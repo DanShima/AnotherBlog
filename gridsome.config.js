@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Danning Chen',
+  siteName: 'Danshima',
   siteDescription: "A safe space to stalk me",
   icon: "src/poring1.jpg",
   transformers: {

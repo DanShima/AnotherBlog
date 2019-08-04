@@ -13,7 +13,7 @@
     </header>
     <slot/> <!-- Page content will be inserted here -->
     <div v-if="sidebar">
-    //do nothing
+    <!--do nothing-->
     </div>
   </div>
 </template>
