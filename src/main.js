@@ -1,9 +1,29 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '~/layouts/Default.vue';
+import VueAnalytics from 'vue-analytics';
 
 export default function (Vue, { router, head, isClient }) {
+  Vue.use(VueAnalytics, {
+    id: 'UA-145072436-1',
+    autoTracking: {
+      screenview: true,
+      pageviewOnLoad: false,
+      skipSamePath: true,
+      pageviewTemplate (route) {
+        return {
+          page: route.path,
+          title: document.title,
+          location: window.location.href
+        };
+      }
+    },
+    debug: {
+      sendHitTask: process.env.NODE_ENV === 'production'
+    },
+    router
+  }),
   //import google Font "Stylish"
   head.link.push({
     rel: 'stylesheet',

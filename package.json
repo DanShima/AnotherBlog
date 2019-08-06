@@ -11,7 +11,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/vue-fontawesome": "^0.1.6",
-    "gridsome": "^0.6.0"
+    "gridsome": "^0.6.0",
+    "vue-analytics": "^5.17.0"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.5.0",
