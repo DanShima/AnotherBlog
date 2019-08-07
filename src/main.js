@@ -10,14 +10,7 @@ export default function (Vue, { router, head, isClient }) {
     autoTracking: {
       screenview: true,
       pageviewOnLoad: false,
-      skipSamePath: true,
-      pageviewTemplate (route) {
-        return {
-          page: route.path,
-          title: document.title,
-          location: window.location.href
-        };
-      }
+      skipSamePath: true
     },
     debug: {
       sendHitTask: process.env.NODE_ENV === 'production'
