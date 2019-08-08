@@ -19,6 +19,13 @@ module.exports = {
         typeName: "Post", // the GraphQL entity that will be created
         route: "/blog/:slug"
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-145072436-1'
+      }
     }
+
   ]
 }
