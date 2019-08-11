@@ -10,6 +10,9 @@
         <g-link class="nav__link" to="/about">About</g-link>
         <g-link class="nav__link" to="/blog">Blog</g-link>
       </nav>
+      <div class="header__right">
+        <ToggleTheme />
+      </div>
     </header>
     <slot/> <!-- Page content will be inserted here -->
     <div v-if="sidebar">
@@ -70,7 +73,11 @@ body {
 </style>
 
 <script>
+import ToggleTheme from '~/components/ToggleTheme.vue'
 export default {
+  components: {
+    ToggleTheme
+  },
   props: ['sidebar']
 }
 
