@@ -44,13 +44,14 @@
       <li><a href="https://hookagnome.web.app/" target="_blank" rel="noopener">HookaGnome</a></li>
       <li><a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">Gear Up</a></li>
     </ul>
-    <h2>Hackathons</h2>
+    <h2>Hackathons/Gamejams</h2>
     <p>2018</p>
     <ul>
-      <li>LiveHacks- Individual winner</li>
+      <li>LiveHacks- individual winner</li>
       <li>Hack4Sweden</li>
-      <li>Siemens hackathon - Second runner-up</li>
-      <li>Truecaller women-only android hackathon - Winning team</li>
+      <li>Siemens hackathon - second runner-up</li>
+      <li>Truecaller women-only android hackathon - winning team</li>
+      <li>King Game Jam - winning team in UX design, creativity and fun awards</li>
       <li>Junction</li>
     </ul>
       <Card/>
