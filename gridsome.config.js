@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Danshima',
   siteDescription: "A safe space to stalk me",
-  icon: "src/poring1.jpg",
+  icon: "src/images/poring1.jpg",
   transformers: {
     remark: {}
   },
