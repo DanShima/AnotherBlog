@@ -1,7 +1,5 @@
 <template>
   <Layout>
-    <h1>About me</h1>
-
     <div class="penguin">
   <div class="penguin-bottom">
     <div class="right-hand"></div>
@@ -28,7 +26,7 @@
 
 
     <p>A self-taught programmer with a background in education and literature.
-      Born in China, grew to full-size in The Netherlands, and now based in Stockholm, Sweden.
+      Born in China, grew to full-size in the Netherlands, and now based in Stockholm, Sweden.
       Obsessed with food, art, programming, nerd culture, and game(development).
       I specialize in developing Android apps while shaking my restless leg.
     </p>
@@ -45,6 +43,15 @@
     <ul>
       <li><a href="https://hookagnome.web.app/" target="_blank" rel="noopener">HookaGnome</a></li>
       <li><a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">Gear Up</a></li>
+    </ul>
+    <h2>Hackathons</h2>
+    <p>2018</p>
+    <ul>
+      <li>LiveHacks- Individual winner</li>
+      <li>Hack4Sweden</li>
+      <li>Siemens hackathon - Second runner-up</li>
+      <li>Truecaller women-only android hackathon - Winning team</li>
+      <li>Junction</li>
     </ul>
       <Card/>
 
