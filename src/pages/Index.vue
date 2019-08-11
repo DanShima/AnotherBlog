@@ -3,7 +3,7 @@
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <div class="homeImage">
-    <g-image alt="Example image" src="~/profilepic.jpg" width="600" />
+    <g-image alt="Example image" src="~/images/profilepic.jpg" width="450" />
     </div>
 
     <h2>I'm alive</h2>
