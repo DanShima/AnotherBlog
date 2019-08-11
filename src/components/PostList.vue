@@ -1,46 +1,37 @@
 <template>
-  <div class="post-list">
-    <hr class="line" />
-    <p class="date" v-html="post.date" />
-    <h1 class="title" v-html="post.title" />
-    <p class="description" v-html="post.description" />
-    <b class="timeToRead"> {{post.timeToRead}} min read </b>  &nbsp;
-    <g-link :to="post.path" class="read">Read more
+  <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
+
+    <div class="post-card__header">
+      <g-image alt="Cover image" v-if="post.coverImage" class="post-card__image" :src="post.coverImage" />
+    </div>
+
+    <div class="post-card__content">
+      <h2 class="post-card__title" v-html="post.title" />
+      <p class="post-card__description" v-html="post.description" />
+
+      <PostMeta class="post-card__meta" :post="post" />
+      <PostTags class="post-card__tags" :post="post" />
+
+    <!--read more button-->
+    <g-link class="post-card__link" :to="post.path" >
       <i class="arrow">
       <font-awesome :icon="['fa', 'chevron-right']" size="xs"/>
       <font-awesome :icon="['fa', 'chevron-right']" size="xs"/>
       <font-awesome :icon="['fa', 'chevron-right']" size="xs"/>
       </i>
     </g-link>
+    </div>
   </div>
 </template>
 
-<style>
-.line {
-  border: 0.5px solid #cdc8c5;
-  margin: 30px 0;
-}
-.date {
-  font-weight: 300;
-}
-
-.timeToRead {
-  color: #86A3C5;
-}
-.read {
-  --text-color: #86A3C3;
-  color: var(--text-color);
-  text-decoration: none;
-  border-radius: 2%;
-  box-shadow: 0 1px 1px var(--text-color), 0 1px 1px var(--text-color);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 8px 10px 8px 10px;
-  border: 1px solid var(--text-color);
-	transform: translate(-50%, -50%);
-}
-
+<style lang="scss">
 i {
+    position: absolute;
+    bottom: 0px;
+    right: 25%;
+    left: 10%;
+    padding-bottom: 5%;
+    color: #86A3C3;
 		animation: arrow-animation 2s;
 		animation-iteration-count: infinite;
 	}
@@ -58,14 +49,8 @@ i + i + i {
 		opacity: 1;
 	}
 
-.read:hover {
-    cursor: pointer;
-    color: white;
-    background-color: var(--text-color);
-  }
-
 i:hover {
-    color: white;
+    color: rgb(73, 80, 175);
 }
 
 @keyframes arrow-animation {
@@ -74,11 +59,58 @@ i:hover {
   100% { opacity: 1; }
 }
 
+.post-card {
+  margin-bottom: var(--space);
+  position: relative;
+  &__header {
+    margin-left: calc(var(--space) * -1);
+    margin-right: calc(var(--space) * -1);
+    margin-bottom: calc(var(--space) / 2);
+    margin-top: calc(var(--space) * -1);
+    overflow: hidden;
+    border-radius: var(--radius) var(--radius) 0 0;
+    &:empty {
+      display: none;
+    }
+  }
+  &__image {
+    min-width: 100%;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
+  }
+  &__tags {
+    z-index: 1;
+    position: relative;
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    overflow: hidden;
+    // hides the arrows: text-indent: -9999px;
+    z-index: 0;
+  }
+}
 
 </style>
 
 <script>
+import PostMeta from '~/components/PostMeta'
+import PostTags from '~/components/PostTags'
+
 export default {
+  components: {
+    PostMeta,
+    PostTags
+  },
   props: ["post"],
 };
 </script>
