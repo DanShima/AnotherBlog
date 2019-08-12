@@ -25,8 +25,8 @@
 </div>
     <p>A self-taught programmer with a background in education and literature.
       Born in China, grew to full-size in the Netherlands, and now based in Stockholm, Sweden.
-      I have too many interests -- food, art, programming, nerd culture, synth/darkwave music, longboarding and game(development) -- and too little time.
-      I specialize in developing Android apps while shaking my restless leg.
+      When I'm not juggling a million interests ranging from food, art, programming, nerd culture, synth/darkwave music, longboarding to games,
+      I focus on improving my specialization in Android development, while shaking my restless leg.
     </p>
     <h2>Tech skills and languages</h2>
       <ul>
