@@ -23,11 +23,9 @@
     <div class="beak-bottom"></div>
   </div>
 </div>
-
-
     <p>A self-taught programmer with a background in education and literature.
       Born in China, grew to full-size in the Netherlands, and now based in Stockholm, Sweden.
-      Obsessed with food, art, programming, nerd culture, and game(development).
+      I have too many interests -- food, art, programming, nerd culture, synth/darkwave music, longboarding and game(development) -- and too little time.
       I specialize in developing Android apps while shaking my restless leg.
     </p>
     <h2>Tech skills and languages</h2>
@@ -54,7 +52,7 @@
       <li>King Game Jam - winning team in UX design, creativity and fun awards</li>
       <li>Junction</li>
     </ul>
-      <Card/>
+    <Card/>
 
   </Layout>
 </template>
