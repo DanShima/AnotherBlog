@@ -2,6 +2,7 @@
 title: Intro to RxJava
 description: Intro to RxJava
 date: 2019-07-30
+tags: ['Android']
 ---
 
 ## Intro to RxJava

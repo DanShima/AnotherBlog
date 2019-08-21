@@ -2,6 +2,7 @@
 title: Github accounts
 description: Having multiple github accounts on your computer
 date: 2019-06-05
+tags: ['Programming', 'Git']
 ---
 
 ## Having multiple github accounts on your computer

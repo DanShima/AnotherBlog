@@ -17,7 +17,15 @@ module.exports = {
       options: {
         path: "blog/**/*.md",
         typeName: "Post", // the GraphQL entity that will be created
-        route: "/blog/:slug"
+        route: "/blog/:slug",
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            route: '/blog/tag/:id',
+            create: true
+          }
+        }
       }
     },
     {

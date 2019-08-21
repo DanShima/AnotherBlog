@@ -2,6 +2,7 @@
 title: Clean code
 description: characteristics of clean code
 date: 2019-05-05
+tags: ['Programming']
 ---
 
 ## Characteristics of clean code

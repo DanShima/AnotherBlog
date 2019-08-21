@@ -2,6 +2,7 @@
 title: Android miscellaneous problems
 description: Various Android problems I encountered in my first year
 date: 2019-07-10
+tags: ['Android']
 ---
 
 ### Various Android problems I encountered in my first year

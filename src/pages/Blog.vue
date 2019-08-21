@@ -18,6 +18,12 @@ query {
         description
         date (format: "D MMMM YYYY")
         path
+        tags {
+          id
+          title
+          path
+        }
+
       }
     }
   }

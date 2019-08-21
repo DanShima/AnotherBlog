@@ -2,6 +2,7 @@
 title: The Five Elements of Effective Thinking
 description: Takeaways from "The Five Elements of Effective Thinking"
 date: 2019-07-05
+tags: ['Self-improvement', 'Book', 'Reading']
 ---
 
 # Takeaways from "The Five Elements of Effective Thinking"
