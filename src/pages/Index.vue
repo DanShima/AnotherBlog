@@ -6,7 +6,7 @@
     <g-image alt="Example image" src="~/images/profilepic.jpg" width="450" />
     </div>
 
-    <h2>I'm alive</h2>
+    <h2>play and slay</h2>
 
     <p class="home-links fa-2x">
       <a href="https://www.linkedin.com/in/danningch/" target="_blank" rel="noopener"><font-awesome :icon="['fab', 'linkedin']"/></a>
