@@ -53,13 +53,16 @@
       <li>Junction</li>
     </ul>
     <Card/>
-
   </Layout>
 </template>
 
 <style>
   h1, h2 {
     font-family: "Stylish";
+  }
+
+  a {
+    text-decoration: none;
   }
   .penguin {
 

@@ -28,9 +28,9 @@
 i {
     position: absolute;
     bottom: 0px;
-    right: 25%;
-    left: 10%;
-    padding-bottom: 5%;
+    right: 0%;
+    left: 85%;
+    padding-bottom: 10%;
     color: #86A3C3;
 		animation: arrow-animation 2s;
 		animation-iteration-count: infinite;

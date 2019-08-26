@@ -57,7 +57,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color:#7268A6;
+  color:#E76A69;
 }
 
 .siteTitle {

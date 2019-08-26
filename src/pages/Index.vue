@@ -34,4 +34,9 @@ export default {
   margin-right: 1rem;
   color:#7268A6;
 }
+
+h2 {
+  color:#778ABF;
+  font-size: 25px;
+}
 </style>
