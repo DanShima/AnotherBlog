@@ -43,6 +43,10 @@
       <li><a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">Gear Up</a></li>
     </ul>
     <h2>Hackathons/Gamejams</h2>
+    <p>2019</p>
+    <ul>
+      <li>LiveHacks #6- winning team</li>
+    </ul>
     <p>2018</p>
     <ul>
       <li>LiveHacks- individual winner</li>
