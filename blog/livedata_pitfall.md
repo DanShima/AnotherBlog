@@ -7,9 +7,9 @@ tags: ['Android', 'lifeCycle']
 
 This week I encountered a peculiar bug at work where the data from network, wrapped in liveData, is fetched only once every two times even though forceFetch boolean is specifically set to true. After investigating for an entire day and logging every steps, I accidentally stumbled upon the documentation on setValue and postValue for liveData.
 
-Both will update the liveData value expected when running from the main thread. PostValue is thread safe and can be used in another thread. see **official documentation** [article] (https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData.html#postValue(T))
+Both will update the liveData value expected when running from the main thread. PostValue is thread safe and can be used in another thread. see [**official documentation**] (https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData.html#postValue(T))
 
-example:
+Example:
 > ```
     val fetchData = MutableLiveData<Boolean>()
     //setValue
@@ -22,6 +22,7 @@ example:
 
 Both code run twice when observed, but for postValue, only the second call triggers the observer! HUH?
 * **This is why:**
+
 Value is being set immediately in a synchronized code block for thread safety, but the observers notification is scheduled to execute on main thread via the event loop (with handler). Value changes to true and then false but scheduling code occurs only once. postTask in the implementation determines whether a runnable needs to be scheduled for notifying observers.
 
 > ```
@@ -37,7 +38,9 @@ protected void postValue(T value) {
    ArchTaskExecutor.getInstance().postToMainThread(mPostValueRunnable);
 }
 > ```
+
 * **When to use which**
+
 My bug was likely because I call postValue for several data sets, and set forceFetch to false just one step later in the code, so only the last value is dispatched.
 Use postValue: UI progress update
 Don't use postValue: getting notified for each change
