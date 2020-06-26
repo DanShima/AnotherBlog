@@ -76,3 +76,13 @@ private fun saveVersionCode() {
         }
 }
 >```
+
+* **Force Gradle to use a version for a dependency used by another dependency**
+>```
+    //in build.gradle under dependencies, add:
+    configurations.all {
+        resolutionStrategy {
+            force 'com.squareup:javapoet:1.13.0
+        }
+    }
+>```
