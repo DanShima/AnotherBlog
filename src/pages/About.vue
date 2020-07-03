@@ -92,8 +92,6 @@
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  
   }
 
   h1, h2 {
