@@ -59,7 +59,7 @@
     </div>
 
     <h2>Games</h2>
-     <div class="wrapper">
+     <div class="gameWrapper">
     <div>
       <a href="https://hookagnome.web.app/" target="_blank" rel="noopener">
     <g-image alt="Hookagnome" src="~/images/hookagnome.png" width="150" height="100" fit="fill"/></a>
@@ -92,6 +92,14 @@
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  }
+
+  .gameWrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px, auto);
   }
 
   h1, h2 {
