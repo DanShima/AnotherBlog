@@ -9,7 +9,6 @@ tags: ['Android', 'syntactic', 'string']
 
 > ```
     import java.util.regex.Pattern
-
     fun String.isValidEmail(): Boolean {
         val regex = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,8}$"
         val pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE)
@@ -23,56 +22,28 @@ tags: ['Android', 'syntactic', 'string']
 > ```
     import android.content.Context
     import io.michaelrocks.libphonenumber.android.PhoneNumberUtil
-
-fun String.formatPhoneNumber(context: Context, region: String): String? {
+    fun String.formatPhoneNumber(context: Context, region: String): String? {
     val phoneNumberKit = PhoneNumberUtil.createInstance(context)
     val number = phoneNumberKit.parse(this, region)
     if (!phoneNumberKit.isValidNumber(number))
         return null
     return phoneNumberKit.format(number, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL)
-}
+    } 
 > ```
 
 3. Content checking
 
 > ```
-    val String.containsLatinLetter: Boolean
+   val String.containsLatinLetter: Boolean
     get() = matches(Regex(".*[A-Za-z].*"))
-
     val String.containsDigit: Boolean
     get() = matches(Regex(".*[0-9].*"))
-
     val String.isAlphanumeric: Boolean
     get() = matches(Regex("[A-Za-z0-9]*"))
-
     val String.hasLettersAndDigits: Boolean
     get() = containsLatinLetter && containsDigit
-
     val String.isIntegerNumber: Boolean
     get() = toIntOrNull() != null
-
-    val String.toDecimalNumber: Boolean
-    get() = toDoubleOrNull() != null
-> ```
-
-3. Content checking
-
-> ```
-    val String.containsLatinLetter: Boolean
-    get() = matches(Regex(".*[A-Za-z].*"))
-
-    val String.containsDigit: Boolean
-    get() = matches(Regex(".*[0-9].*"))
-
-    val String.isAlphanumeric: Boolean
-    get() = matches(Regex("[A-Za-z0-9]*"))
-
-    val String.hasLettersAndDigits: Boolean
-    get() = containsLatinLetter && containsDigit
-
-    val String.isIntegerNumber: Boolean
-    get() = toIntOrNull() != null
-
     val String.toDecimalNumber: Boolean
     get() = toDoubleOrNull() != null
 > ```
@@ -82,7 +53,6 @@ we only save 5 primitive types with Any as non-null value. use commit if you wan
 
 > ```
 import android.content.Context
-
 fun String.save(applicationContext: Context, value: Map<String, Any>, clear: Boolean = false, now: Boolean = false) {
     val sp = applicationContext.getSharedPreferences(this, Context.MODE_PRIVATE).edit()
     if (clear)
@@ -104,7 +74,6 @@ fun String.save(applicationContext: Context, value: Map<String, Any>, clear: Boo
     else
         sp.apply()
 }
-
 fun String.load(applicationContext: Context): Map<String, Any> {
     val sp = applicationContext.getSharedPreferences(this, Context.MODE_PRIVATE)
     val keys = sp.all.keys
@@ -116,14 +85,12 @@ fun String.load(applicationContext: Context): Map<String, Any> {
     }
     return result
 }
-
 "com.app.test".save(applicationContext,
     mapOf(
         "TEST_VALUE" to "test test",
         "ACTIVITY" to true
     )
 )
-
 val testValue = "test".load(applicationContext)["TEST_VALUE"] as? String // "test test"
 > ```
 
@@ -133,25 +100,21 @@ val testValue = "test".load(applicationContext)["TEST_VALUE"] as? String // "tes
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-
 val String.jsonObject: JSONObject?
     get() = try {
         JSONObject(this)
     } catch (e: JSONException) {
         null
     }
-
 val String.jsonArray: JSONArray?
     get() = try {
         JSONArray(this)
     } catch (e: JSONException) {
         null
     }
-
 val json = "{\"key\": \"value\"}".jsonObject  // {"key": "value"}
 val jsonAgain = json?.toString() // "{"key": "value"}"
 val stringFromJson = json?.getString("key") // "value"
-
 fun JSONObject.getStringOrNull(name: String): String? =
       try {
          val str = getString(name).trim()
@@ -201,7 +164,6 @@ get() {
     }
     return path.substring(index + 1)
 }
-
 val exampleA = "https://google.com/chrome/".lastPathComponent // chrome
 val exampleB = "C:\\Windows\\Fonts\\font.ttf".lastPathComponent // font.ttf
 val exampleC = "/dev/null".lastPathComponent // null
@@ -228,7 +190,6 @@ get() {
 
 > ```
 import java.security.MessageDigest
-
 val String.md5: String
 get() {
     val bytes = MessageDigest.getInstance("MD5").digest(this.toByteArray())
@@ -236,7 +197,6 @@ get() {
         "%02x".format(it)
     }
 }
-
 val String.sha1: String
 get() {
     val bytes = MessageDigest.getInstance("SHA-1").digest(this.toByteArray())
@@ -251,8 +211,6 @@ get() {
 > ```
 infix fun String?.`++`(s:String?):String? =
     if (this == null) s else if (s == null) this else this + s
-
-
 assertThat(null `++` null).isNull()
 assertThat("A" `++` null).isEqualTo("A")
 assertThat(null `++` "B").isEqualTo("B")
