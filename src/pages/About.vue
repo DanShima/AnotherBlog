@@ -30,25 +30,51 @@
     </p>
     <h2>Tech skills and languages</h2>
       <ul>
-        <li>Build android applications with Java and Kotlin</li>
-        <li>Build frontend web applications with Angular.js and Vue.js</li>
+        <li>Build android applications with Java, Kotlin and Flutter</li>
+        <li>Build frontend web applications with Angular.js, React, and Vue.js</li>
         <li>Build games with Unity, Blender and LibGDX</li>
-        <li>Experience with: Java, Kotlin, C#, C++, Python, JS/HTML/CSS</li>
+        <li>Experience with: Java, Kotlin, C#, Python, JS/HTML/CSS, Dart</li>
         <li>CI/CD, infrastructure and operations, build and release management,
           basic understanding of networking and security</li>
       </ul>
+    
+    <!--https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout-->
+    <h2>Published apps</h2>
+    <div class="wrapper">
+    <div><a href="https://play.google.com/store/apps/details?id=com.kivra.Kivra&hl=en" target="_blank" rel="noopener">
+    <g-image alt="Kivra" src="~/images/kivra.png" width="100" height="100" fit="fill"/></a>
+    </div>
+    <div>
+    <a href="https://play.google.com/store/apps/details?id=se.doktor.doktorse.production&hl=en" target="_blank" rel="noopener">
+    <g-image alt="Doktorse" src="~/images/doktor.png" width="100" height="100" fit="fill"/></a>
+    </div>
+    <div>
+    <a href="https://play.google.com/store/apps/details?id=se.anicura.production&hl=en" target="_blank" rel="noopener">
+    <g-image alt="Anicura" src="~/images/anicura.png" width="100" height="100" fit="fill"/></a>
+    </div>
+    <div>
+    <a href="https://play.google.com/store/apps/details?id=com.vibe.app.android&hl=en" target="_blank" rel="noopener">
+    <g-image alt="Vibe" src="~/images/vibe.png" width="100" height="100" fit="fill"/></a>
+    </div>
+    </div>
+
     <h2>Games</h2>
-    <ul>
-      <li><a href="https://hookagnome.web.app/" target="_blank" rel="noopener">HookaGnome</a></li>
-      <li><a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">Gear Up</a></li>
-    </ul>
+     <div class="wrapper">
+    <div>
+      <a href="https://hookagnome.web.app/" target="_blank" rel="noopener">
+    <g-image alt="Hookagnome" src="~/images/hookagnome.png" width="150" height="100" fit="fill"/></a>
+    <br>Hookagnome!<br>
+    </div>
+    <div>
+    <a href="https://github.com/DanShima/GameProject" target="_blank" rel="noopener">
+    <g-image alt="GearUp" src="~/images/gearup.png" width="150" height="100" fit="fill"/></a>
+    <br>Gear Up<br>
+    </div>
+     </div>
+ 
     <h2>Hackathons/Gamejams</h2>
-    <p>2019</p>
     <ul>
       <li>LiveHacks #6- winning team</li>
-    </ul>
-    <p>2018</p>
-    <ul>
       <li>LiveHacks- individual winner</li>
       <li>Hack4Sweden</li>
       <li>Siemens hackathon - second runner-up</li>
@@ -61,6 +87,15 @@
 </template>
 
 <style>
+  .wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  
+  }
+
   h1, h2 {
     font-family: "Stylish";
   }
