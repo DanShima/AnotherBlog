@@ -37,4 +37,17 @@ fun summation(n:Int):Int {
         }
         return sum
     }
-//Delete occurrences of an element if it occurs more than n times
+//Delete occurrences of an element if it occurs more than n times (without changing the order)
+fun deleteNth(elements: IntArray, maxOccurrences: Int): IntArray {
+        val count = hashMapOf<Int, Int>().withDefault { 0 }
+        return elements.filter { i -> count.getValue(i).let { count[i] = it + 1; it < maxOccurrences } }.toIntArray()
+    }
+fun deleteNth(elements: IntArray, n: Int): IntArray {
+        val counts = mutableMapOf<Int, Int>()
+        fun countFilter(x: Int) = counts.compute(x, { _, count -> count?.plus(1) ?: 1 })!! <= n
+        return elements.filter { countFilter(it) }.toIntArray()
+    }
+
+
+
+
