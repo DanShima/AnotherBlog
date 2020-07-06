@@ -47,7 +47,9 @@ fun deleteNth(elements: IntArray, n: Int): IntArray {
         fun countFilter(x: Int) = counts.compute(x, { _, count -> count?.plus(1) ?: 1 })!! <= n
         return elements.filter { countFilter(it) }.toIntArray()
     }
-
+//Opposite attract: If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+fun loveFun(flowerA: Int, flowerB: Int): Boolean = (flowerA + flowerB) %2 == 1
+fun loveFun(flowerA: Int, flowerB: Int): Boolean = if(flowerA % 2 == flowerB % 2) false else true
 
 
 
