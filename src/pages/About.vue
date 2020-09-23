@@ -23,14 +23,13 @@
     <div class="beak-bottom"></div>
   </div>
 </div>
-    <p>A self-taught programmer with a background in education and literature.
-      Born in China, grew to full-size in the Netherlands, and now based in Stockholm, Sweden.
-      When I'm not juggling a million interests ranging from food, art, programming, nerd culture, synth/darkwave music, longboarding to games,
-      I focus on improving my specialization in Android development, while shaking my restless leg.
+    <p>I'm Danning, an Android developer working for Doktor.se on their apps in Stockholm, Sweden.
+      I've spent the past years working across different areas of software development, front-end development,, app UI/UX, to my current role developing application for the Android platform.
+      I was born in China, grew up in the Netherlands, and now based in Stockholm, Sweden. Out of the office you'll find me dreaming of food, art, nerd culture, synth/darkwave music, longboarding and games, while shaking my restless leg.
     </p>
     <h2>Tech skills and languages</h2>
       <ul>
-        <li>Build android applications with Java, Kotlin and Flutter</li>
+        <li>Build mobile applications with Java, Kotlin and Flutter</li>
         <li>Build frontend web applications with Angular.js, React, and Vue.js</li>
         <li>Build games with Unity, Blender and LibGDX</li>
         <li>Experience with: Java, Kotlin, C#, Python, JS/HTML/CSS, Dart</li>
