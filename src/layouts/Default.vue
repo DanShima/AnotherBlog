@@ -31,7 +31,7 @@ query {
 
 <style>
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'JetBrains Mono';
   margin:0;
   padding:0;
   line-height: 1.5;
@@ -51,7 +51,7 @@ body {
   margin-bottom: 20px;
   height: 100px;
   font-size: 1.5em;
-  font-family: "Stylish";
+  font-family: 'JetBrains Mono';
   font-size: 28px;
 }
 

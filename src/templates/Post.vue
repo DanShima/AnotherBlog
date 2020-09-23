@@ -42,7 +42,7 @@ query Post ($path: String!) {
   text-align: center;
   font-size: 20px;
   padding: 2em 0;
-  font-family: 'Stylish';
+  font-family: 'JetBrains Mono';
 }
 .post-content {
   font-size: 18px;

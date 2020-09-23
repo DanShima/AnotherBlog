@@ -102,7 +102,7 @@
   }
 
   h1, h2 {
-    font-family: "Stylish";
+    font-family: 'JetBrains Mono';
   }
 
   a {
