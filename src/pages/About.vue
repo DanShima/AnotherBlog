@@ -57,7 +57,7 @@
     </div>
     </div>
 
-    <h2>Games</h2>
+    <h2>Some games I worked on</h2>
      <div class="gameWrapper">
     <div>
       <a href="https://hookagnome.web.app/" target="_blank" rel="noopener">
