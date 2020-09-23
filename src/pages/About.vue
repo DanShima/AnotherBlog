@@ -29,7 +29,7 @@
     </p>
     <h2>Tech skills and languages</h2>
       <ul>
-        <li>Build mobile applications with Java, Kotlin and Flutter</li>
+        <li>Build mobile applications with Java, Kotlin, Swift and Flutter</li>
         <li>Build frontend web applications with Angular.js, React, and Vue.js</li>
         <li>Build games with Unity, Blender and LibGDX</li>
         <li>Experience with: Java, Kotlin, C#, Python, JS/HTML/CSS, Dart</li>
